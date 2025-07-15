@@ -46,32 +46,10 @@
       font-size: 1em;
       cursor: pointer;
       transition: all 0.3s ease;
+      text-decoration: none;
     }
     .boton:hover {
       background: #8b5a2b;
-    }
-    .ficha {
-      display: none;
-      background: rgba(255, 255, 255, 0.95);
-      border-radius: 12px;
-      margin: 20px auto;
-      padding: 20px;
-      max-width: 900px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.3);
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    .ficha img {
-      max-width: 100%;
-      border-radius: 10px;
-    }
-    .columna {
-      flex: 1;
-      min-width: 250px;
-    }
-    .oculto {
-      display: none;
     }
   </style>
 </head>
@@ -82,36 +60,14 @@
   </header>
 
   <div class="botones">
-    <button class="boton" onclick="mostrarFicha('luis')">Luis XVI</button>
-    <button class="boton" onclick="mostrarFicha('antonieta')">María Antonieta</button>
-    <button class="boton" onclick="mostrarFicha('robespierre')">Robespierre</button>
-    <button class="boton" onclick="mostrarFicha('danton')">Danton</button>
-    <button class="boton" onclick="mostrarFicha('marat')">Marat</button>
-    <button class="boton" onclick="mostrarFicha('corday')">Charlotte Corday</button>
-    <button class="boton" onclick="mostrarFicha('napoleon')">Napoleón Bonaparte</button>
-    <button class="boton" onclick="mostrarFicha('desmoulins')">Camille Desmoulins</button>
+    <a class="boton" href="luis.html">Luis XVI</a>
+    <a class="boton" href="antonieta.html">María Antonieta</a>
+    <a class="boton" href="robespierre.html">Robespierre</a>
+    <a class="boton" href="danton.html">Danton</a>
+    <a class="boton" href="marat.html">Marat</a>
+    <a class="boton" href="corday.html">Charlotte Corday</a>
+    <a class="boton" href="napoleon.html">Napoleón Bonaparte</a>
+    <a class="boton" href="desmoulins.html">Camille Desmoulins</a>
   </div>
-
-  <!-- Ficha Luis XVI -->
-  <div id="ficha-luis" class="ficha oculto">
-    <div class="columna">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/5/54/Louis_XVI_of_France_by_Calatayud.jpg" alt="Luis XVI">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Arms_of_Louis_XVI.svg" alt="Escudo de Luis XVI">
-    </div>
-    <div class="columna">
-      <h2>Luis XVI</h2>
-      <p>Rey de Francia durante el inicio de la Revolución. Representa el antiguo régimen absolutista. Fue ejecutado por guillotina en 1793.</p>
-      <p>Su indecisión política y el colapso económico de Francia aceleraron la rebelión popular. Su juicio y muerte simbolizan el fin de la monarquía absoluta en Francia.</p>
-    </div>
-  </div>
-
-  <script>
-    function mostrarFicha(id) {
-      const fichas = document.querySelectorAll('.ficha');
-      fichas.forEach(ficha => ficha.classList.add('oculto'));
-      document.getElementById(`ficha-${id}`).classList.remove('oculto');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  </script>
 </body>
 </html>
