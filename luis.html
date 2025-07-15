@@ -12,49 +12,56 @@
       color: #2c1d0f;
     }
     .contenedor {
+      max-width: 1200px;
+      margin: auto;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       align-items: flex-start;
-      gap: 20px;
-      padding: 40px;
+      gap: 30px;
+      padding: 60px 40px;
     }
     .caja-img {
-      flex: 1 1 300px;
+      flex: 1 1 350px;
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 30px;
     }
     .caja-img img {
       width: 100%;
-      max-width: 300px;
+      max-width: 350px;
       border: 3px solid #8b5a2b;
       border-radius: 15px;
     }
     .caja-info {
-      flex: 2 1 400px;
+      flex: 2 1 600px;
       background-color: #fff5e1;
       border: 3px solid #8b5a2b;
       border-radius: 15px;
-      padding: 20px;
+      padding: 30px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
     .caja-info h2 {
-      font-size: 2em;
-      margin-bottom: 10px;
+      font-size: 2.2em;
+      margin-bottom: 15px;
+    }
+    .caja-info p {
+      font-size: 1.15em;
+      line-height: 1.7em;
     }
     .volver {
-      margin: 30px;
+      margin: 40px auto;
       text-align: center;
     }
     .volver a {
       text-decoration: none;
       background-color: #c19a6b;
       color: white;
-      padding: 12px 20px;
+      padding: 14px 24px;
       border-radius: 10px;
       border: 2px solid #8b5a2b;
       font-weight: bold;
+      font-size: 1em;
     }
     .volver a:hover {
       background-color: #8b5a2b;
@@ -64,14 +71,13 @@
 <body>
   <div class="contenedor">
     <div class="caja-img">
-      <img src="#" alt="Luis XVI">
-      <img src="#" alt="Otra imagen del contexto de Luis XVI">
+      <img src="img/luis.jpg" alt="Luis XVI">
+      <img src="img/luis-escudo.jpg" alt="Escudo de Luis XVI">
     </div>
     <div class="caja-info">
       <h2>Luis XVI</h2>
-      <p>Luis XVI fue el rey de Francia desde 1774 hasta 1792. Nacido en 1754, fue miembro de la dinastía de los Borbones. Durante su reinado, Francia enfrentó una grave crisis económica provocada por el gasto excesivo, las guerras costosas (incluyendo su apoyo a la Independencia de Estados Unidos) y un sistema fiscal injusto.</p>
-      <p>Incapaz de implementar reformas eficaces, Luis XVI perdió la confianza de sus ciudadanos. En 1789, se convocó a los Estados Generales, dando inicio a la Revolución Francesa. Luis XVI fue obligado a aceptar una monarquía constitucional, pero su intento de huir de Francia en 1791 (Fuga de Varennes) debilitó aún más su imagen.</p>
-      <p>Fue arrestado, juzgado por traición y ejecutado en la guillotina el 21 de enero de 1793. Su muerte marcó simbólicamente el fin del Antiguo Régimen y el inicio de una nueva era política en Francia.</p>
+      <p>Luis XVI fue rey de Francia durante el inicio de la Revolución Francesa y símbolo del Antiguo Régimen. Su reinado estuvo marcado por una profunda crisis económica, social y política que desató el estallido revolucionario.</p>
+      <p>Su indecisión, falta de reformas efectivas y la oposición a los cambios propuestos por la Asamblea Nacional provocaron la pérdida de apoyo. Fue arrestado, juzgado por traición y ejecutado por guillotina en 1793. Su muerte marcó el fin de la monarquía absoluta en Francia y el inicio de la República.</p>
     </div>
   </div>
 
